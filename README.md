@@ -1,5 +1,5 @@
 ## RAG-LLM-Finance-Chatbot
-The LLM-Finance-Chatbot is designed to answer finance-related queries using company reports in PDF format.Retrieval-Augmented Generation (RAG) is used for optimising the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response.. This project showcases coding abilities and proficiency with Large Language Models (LLMs), specifically focusing on the use of GPT models for extracting and serving information from structured documents.
+The LLM-Finance-Chatbot is designed to answer finance-related queries using company reports in PDF format.Retrieval-Augmented Generation (RAG) is used for optimising the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response.. This project specifically focusing on the use of GPT models for extracting and serving information from custom financial documents.
 
 ## Features
 - **Finance Query Recognition**: Determines if a user's question is related to finance.
