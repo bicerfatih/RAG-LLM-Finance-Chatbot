@@ -37,7 +37,7 @@ python src/main.py
 Follow the on-screen prompts to interact with the chatbot.
 
 ## Documentation
-Further documentation is available in the `docs/` directory, detailing advanced configurations and operational details.
+Financial reports documents are available in the `pdf_chat_data/` directory. 
 
 ## Contributing
 Contributions to this project are welcome. Please fork the repository and submit a pull request to propose your changes.
