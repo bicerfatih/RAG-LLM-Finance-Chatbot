@@ -30,9 +30,10 @@ Before you begin, ensure you have the following installed:
    ```
 
 ### Usage
-To run the chatbot, execute the following command in the terminal:
+To run the chatbot and view this Streamlit app on a browser, execute the following command in the terminal:
 ```
-python src/main.py
+  command:
+    streamlit run src/main.py
 ```
 Follow the on-screen prompts to interact with the chatbot.
 
