@@ -1,0 +1,20 @@
+streamlit
+langchain
+chromadb
+openai
+transformers
+torch
+tiktoken
+huggingface-hub
+ragas
+unstructured
+pypdf2
+google-api-python-client
+google-api-core
+google-auth
+google-auth-httplib2
+googleapis-common-protos
+html2text
+streamlit_chat
+
+# sudo /Applications/Python\3.11/Install\Certificates.command - Run this command if there is a SSL cert issue during a web search.

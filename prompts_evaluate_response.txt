@@ -1,0 +1,38 @@
+Amazon.com Inc.
+Question: What are the key risks associated with Amazon's online retail segment?
+Ground Truth: The key risks include volatile profitability due to costs related to fulfillment network expansion, technology, and marketing which constrain margins.
+Question: What percentage of total U.S. retail e-commerce sales did Amazon's sales represent in 2022?
+Ground Truth: Amazon's U.S. retail e-commerce sales represented almost 15% of total retail sales.
+Question: How has Amazon's advertising business grown in terms of percentage of total sales from 2019 to 2022?
+Ground Truth: Amazon's advertising sales grew from 4.5% of total sales in 2019 to 7.3% in 2022.
+Question: What are Amazon's expectations for AWS sales growth in the years 2024 and 2025?
+Ground Truth: Amazon forecasts AWS sales growth to accelerate in 2024 and 2025, expecting it to be in the 10% to 15% area.
+Question: What percentage of global IT spending is currently in the cloud, according to Amazon?
+Ground Truth: Just 5-10% of global IT spending is in the cloud.
+Question: What is the expected growth rate area for AWS sales in 2023?
+Ground Truth: Moderating to the 10% to 15% area.
+Question: How did Amazon's total operating losses from its North America and International segments in 2022 affect its profitability?
+Ground Truth: Led to net losses for the year.
+Question: What are the expected benefits of Amazon transitioning to a regionalized U.S. fulfillment network model?
+Ground Truth: It will shorten the distance packages need to travel, resulting in fewer touchpoints and increased productivity.
+Question: How did Amazon’s leadership in cloud-based services position it in the market?
+Ground Truth: It positioned Amazon to be a share gainer as more commerce is conducted online.
+AT&T Inc.
+Question: What is AT&T's adjusted Debt to EBITDA ratio forecast for 2023?
+Ground Truth: AT&T's adjusted Debt to EBITDA ratio is forecast to improve to between 3.6x and 3.7x in 2023.
+Question: What financial strategy has AT&T's management emphasized for its excess cash flow after dividends?
+Ground Truth: AT&T's management plans to use all excess cash flow after dividends for debt reduction.
+Question: How has AT&T's broadband customer base changed in terms of high-speed data customers in 2022?
+Ground Truth: Despite aggressive fiber expansion, AT&T saw a net loss of 12,000 high-speed data customers in 2022.
+Question: What are the expected trends in AT&T's business wireline revenue and EBITDA for 2023?
+Ground Truth: AT&T expects its business wireline revenue and EBITDA to decline in the high-single-digit percent area in 2023.
+Question: What is AT&T's target for fiber-to-the-home (FTTH) passings by 2025?
+Ground Truth: About 30 million passings.
+Question: What is the expected rate of decline in AT&T's postpaid phone net adds in 2023 compared to 2022?
+Ground Truth: Expected to slow by 15%.
+Question: How much of AT&T's footprint does the FTTH network currently cover?
+Ground Truth: About 31%.
+Question: What are the expected broadband revenue growth percentages for AT&T in 2023 and 2024?
+Ground Truth: 4%-6% in 2023 and 3%-5% in 2024.
+Question: What is AT&T's plan for its capital expenditure in 2023?
+Ground Truth: Capex should peak in 2023.
