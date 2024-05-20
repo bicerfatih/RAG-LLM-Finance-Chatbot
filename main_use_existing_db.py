@@ -27,7 +27,7 @@ llm = ChatOpenAI(model="gpt-4-turbo", max_tokens=1024, streaming=True, verbose=T
 history = FileChatMessageHistory('chat_history.json')
 llm_memory = ConversationBufferMemory(memory_key='chat_history', chat_memory=history, return_messages=True)
 embedding_function = OpenAIEmbeddings()
-store = Chroma(persist_directory='./chroma', embedding_function=embedding_function, collection_name='financial_documents')
+store = Chroma(persist_directory='./chroma2', embedding_function=embedding_function, collection_name='financial_documents')
 vectorstore_info = VectorStoreInfo(name="pdf_chat_data", description="financial_documents_pdf", vectorstore=store)
 toolkit = VectorStoreToolkit(vectorstore_info=vectorstore_info, llm=llm)
 agent_executor = create_vectorstore_agent(llm=llm, toolkit=toolkit, verbose=True, memory=llm_memory, agent_executor_kwargs={"handle_parsing_errors": True}, max_iterations=10)
