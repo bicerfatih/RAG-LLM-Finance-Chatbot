@@ -3,7 +3,7 @@ langchain
 chromadb
 openai
 transformers
-torch
+#torch
 tiktoken
 huggingface-hub
 ragas
