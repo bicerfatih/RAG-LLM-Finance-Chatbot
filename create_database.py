@@ -55,8 +55,8 @@ def split_text(documents: list[Document]):
     try:
         # Creating a RecursiveCharacterTextSplitter instance for splitting text
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000,  # Setting the chunk size
-            chunk_overlap=200,  # Setting the chunk overlap
+            chunk_size=500,  # Setting the chunk size
+            chunk_overlap=100,  # Setting the chunk overlap
             length_function=len,  # Setting the length function
             add_start_index=True,  # Adding start index to chunks
         )
