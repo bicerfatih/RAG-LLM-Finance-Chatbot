@@ -1,3 +1,4 @@
+import os  # Importing the os module for file and directory operations
 import streamlit as st  # Importing the Streamlit library for building web applications
 import logging  # Importing the logging module for logging messages
 from dotenv import load_dotenv  # Importing load_dotenv function to load environment variables
@@ -17,6 +18,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Load environment variables
 load_dotenv('./.env')
+persist_directory = './chroma2'
 
 # Initialize global components (web search, language model, memory, and vector stores)
 search_api, embeddings = initialize_web_search()
@@ -27,7 +29,10 @@ llm = ChatOpenAI(model="gpt-4-turbo", max_tokens=1024, streaming=True, verbose=T
 history = FileChatMessageHistory('chat_history.json')
 llm_memory = ConversationBufferMemory(memory_key='chat_history', chat_memory=history, return_messages=True)
 embedding_function = OpenAIEmbeddings()
-store = Chroma(persist_directory='./chroma2', embedding_function=embedding_function, collection_name='financial_documents')
+
+if not os.path.exists(persist_directory):
+    database_main()
+store = Chroma(persist_directory=persist_directory, embedding_function=embedding_function, collection_name='financial_documents')
 vectorstore_info = VectorStoreInfo(name="pdf_chat_data", description="financial_documents_pdf", vectorstore=store)
 toolkit = VectorStoreToolkit(vectorstore_info=vectorstore_info, llm=llm)
 agent_executor = create_vectorstore_agent(llm=llm, toolkit=toolkit, verbose=True, memory=llm_memory, agent_executor_kwargs={"handle_parsing_errors": True}, max_iterations=10)
@@ -64,7 +69,7 @@ def agent_response(prompt):
     if is_finance_related(prompt):
         # First try to find a relevant document from the local vector store
         results = store.similarity_search_with_score(prompt)
-        if results[0][1] < 0.3:
+        if results[0][1] < 0.5:
             relevant_local_document_content(prompt)
             agent_local_response = agent_executor.invoke(prompt)
             print(agent_executor.invoke(prompt))
@@ -104,5 +109,5 @@ def setup_ui():
 if __name__ == "__main__":
     if 'messages' not in st.session_state:
         st.session_state['messages'] = []
-        #database_main()
+
     setup_ui()
